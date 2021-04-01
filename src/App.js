@@ -61,7 +61,7 @@ const App = () => {
         });
     },[]);
     return (
-    	<HashRouter>
+    	<Router>
             <div className="pageX1 pageX"></div>
             <div className="pageX2 pageX"></div>
             <div className="pageX3 pageX"></div>
@@ -110,7 +110,7 @@ const App = () => {
                     />
                 </Switch>
             </div>
-    	</HashRouter>
+    	</Router>
     );
 }
 
