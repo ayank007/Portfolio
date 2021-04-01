@@ -2,6 +2,7 @@ import { React, useEffect } from 'react';
 import { init } from 'ityped';
 import './header.css';
 import logo from '../../img/logo2.png';
+import { HashLink as Link } from 'react-router-hash-link';
 const Header = () => {
     useEffect(()=>{
         init('#whatIDo', { showCursor: true, 
@@ -48,14 +49,14 @@ const Header = () => {
                 </p>
                 <div className='btns'>
                     <div className='link'>
-                        <a href='#About'>
+                        <Link smooth to='#About'>
                             Know Me Better
-                        </a>
+                        </Link>
                     </div>
                     <div className='link'>
-                        <a href='#Projects'>
+                        <Link smooth to='#Projects'>
                             See My Projects
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>
