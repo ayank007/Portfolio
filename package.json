@@ -1,5 +1,5 @@
 {
-  "homepage":"http://ayank007.github.io/Portfolio",
+  "homepage": "http://ayank007.github.io/Portfolio",
   "name": "resume",
   "version": "0.1.0",
   "private": true,
@@ -13,6 +13,7 @@
     "font-awesome": "^4.7.0",
     "framer-motion": "^4.0.2",
     "gsap": "^3.6.0",
+    "hash-router": "^0.4.0",
     "hover-effect": "^1.1.0",
     "ityped": "^1.0.3",
     "jquery": "1.12.0",
@@ -27,8 +28,8 @@
     "web-vitals": "^1.1.1"
   },
   "scripts": {
-    "predeploy":"npm run build",
-    "deploy":"gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
