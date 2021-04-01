@@ -7,18 +7,16 @@ import Contact from '../../section/contact/Contact';
 
 const ProjectDetails5 = ({props, doo}) => {
     useEffect(()=>{
-        $('#Navbar .nav1con a').attr('href','#Root');
-        $('#Sidebar a').attr('href','#Root');
         $('.homeLink').click(function(){
             doo();
             setTimeout(function(){
-                window.location.href=`/#Root`;
+                window.location.href=`/Portfolio/#/#Root`;
             },1200);
         });
         $('.workLink').click(function(){
             doo();
             setTimeout(function(){
-                window.location.href=`/#Projects`;
+                window.location.href=`/Portfolio/#/#Projects`;
             },1200);
         });
         $('.goAboutLink').click(function(){
@@ -27,7 +25,7 @@ const ProjectDetails5 = ({props, doo}) => {
 				$('#AboutSandE').click();
 			}
             setTimeout(function(){
-                window.location.href=`/#About`;
+                window.location.href=`/Portfolio/#/#About`;
             },1200);
         });
         $('.AboutDetailsLink').click(function(){
@@ -36,7 +34,7 @@ const ProjectDetails5 = ({props, doo}) => {
 				$('#ACademicDetails').click();
 			}
             setTimeout(function(){
-                window.location.href=`/#AboutDetails`;
+                window.location.href=`/Portfolio/#/#AboutDetails`;
             },1200);
         });
         $('.ACademicDetailsLink').click(function(){
@@ -45,13 +43,7 @@ const ProjectDetails5 = ({props, doo}) => {
 				$('#AboutDetails').click();
 			}
             setTimeout(function(){
-                window.location.href=`/#ACademicDetails`;
-            },1200);
-        });
-        $('.contactLink').click(function(){
-            doo();
-            setTimeout(function(){
-                window.location.href=`/#Contact`;
+                window.location.href=`/Portfolio/#/#ACademicDetails`;
             },1200);
         });
     },[]);

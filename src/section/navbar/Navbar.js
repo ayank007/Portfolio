@@ -5,7 +5,7 @@ import $ from 'jquery';
 import logo from '../../img/logo2.png';
 import Modal from '../../components/cv/Resume';
 import DelayLink from 'react-delay-link';
-
+import { HashLink as Link } from 'react-router-hash-link';
 const Navbar = ({props,doo}) => {
 	const [isOpen, toggle] = useState(false);
 	function handlOpenModal(open) {
@@ -66,12 +66,13 @@ const Navbar = ({props,doo}) => {
 							<div>Menu</div>
 						</div>
 						<ul>
-							<li><a href="#Root" className="link homeLink">Home</a></li>
-							<li><a href="#Projects" className="link workLink">My Recent Works</a></li>
-							<li><a href="#AboutDetails" className="link AboutDetailsLink">About Me</a></li>
-							<li><a href="#About" className="link goAboutLink">Skills & Experience</a></li>
-							<li><a href="#ACademicDetails" className="link ACademicDetailsLink">Academic Details</a></li>
-							<li><a href="#Contact" className="link contactLink">Contact Details</a></li>
+							<li><Link smooth to="#Root" className="link homeLink">Home</Link></li>
+							<li><Link smooth to="#Projects" className="link workLink">My Recent Works</Link></li>
+							<li><Link smooth to="#AboutDetails" className="link AboutDetailsLink">About Me</Link></li>
+							<li><Link smooth to="#About" className="link goAboutLink">Skills & Experience</Link></li>
+							<li><Link smooth to="#ACademicDetails" className="link ACademicDetailsLink">Academic Details</Link></li>
+							<li><Link smooth to="/#Contact" className="link contactLink">Contact Details</Link>
+							</li>
 						</ul>
 					</div>
 				</div>
