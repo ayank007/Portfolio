@@ -2,7 +2,7 @@ import { React, useEffect, useState } from 'react';
 import bootstrap from '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import { Cursor} from './components/cursor/Cursor';
 import $ from 'jquery';
-import { BrowserRouter as Router,Switch,Route } from 'react-router-dom';
+import { HashRouter as Router,Switch,Route } from 'react-router-dom';
 import Home from './Home';
 import './App.css';
 import Navbar from './section/navbar/Navbar';
@@ -61,7 +61,7 @@ const App = () => {
         });
     },[]);
     return (
-    	<Router>
+    	<HashRouter>
             <div className="pageX1 pageX"></div>
             <div className="pageX2 pageX"></div>
             <div className="pageX3 pageX"></div>
@@ -110,7 +110,7 @@ const App = () => {
                     />
                 </Switch>
             </div>
-    	</Router>
+    	</HashRouter>
     );
 }
 
