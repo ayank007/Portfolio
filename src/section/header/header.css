@@ -173,6 +173,9 @@
         height: 45px;
         font-size: 16px;
     }
+    .ityped-cursor{
+        transform: translateY(-5px);
+    }
 }
 @media screen and (max-width:520px) {
     #whatIDo{
@@ -186,5 +189,8 @@
     }
     .headingCard > p{
         font-size: 16px;
+    }
+    .btns{
+        margin-right: 15px;
     }
 }

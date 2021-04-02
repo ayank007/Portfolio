@@ -370,3 +370,15 @@ button{
     color: azure;
     font-size: 40px;
 }
+@media screen and (max-width:800px) {
+    .pageTxt{
+        top: 30%;
+        left: 30%;
+    }    
+}
+@media screen and (max-width:500px) {
+    .pageTxt{
+        top: 20%;
+        left: 25%;
+    }    
+}

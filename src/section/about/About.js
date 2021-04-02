@@ -24,6 +24,7 @@ const About = () => {
 	function handlOpenModal1(open) {
 		toggle(open);
 	}
+    
     const [isModal2Open, toggleModal2] = useState(false);
 	function handlOpenModal2(open) {
 		toggleModal2(open);

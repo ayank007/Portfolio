@@ -505,3 +505,8 @@
         opacity: 0.2;
     }
 }
+@media screen and (max-width:420px){
+    .accordionBtn .circle{
+        opacity: 0;
+    }
+}

@@ -2,25 +2,31 @@ import { React, useEffect } from 'react';
 import './sidebar.css';
 import $ from 'jquery';
 import { HashLink as Link } from 'react-router-hash-link';
-
+import {isMobile} from 'react-device-detect';
 const hamBoxME = (e) => {
-    const ham = document.getElementsByClassName('hamBox')[0]; 
-    ham.style.setProperty('--bg',`black`);
-    $('.cursor-follower').css('display','none');
-    $('.cursor').css('display','none');
+	if (!isMobile) {
+		const ham = document.getElementsByClassName('hamBox')[0]; 
+		ham.style.setProperty('--bg',`black`);
+		$('.cursor-follower').css('display','none');
+		$('.cursor').css('display','none');
+	}
 }
 const hamBoxML = (e) => {
-    const ham = document.getElementsByClassName('hamBox')[0]; 
-    ham.style.setProperty('--x',`50%`);
-    ham.style.setProperty('--y',`50%`);
-    ham.style.setProperty('--bg',`white`);
-    $('.cursor-follower').css('display','block');
-    $('.cursor').css('display','block');	
+	if (!isMobile) {
+		const ham = document.getElementsByClassName('hamBox')[0]; 
+		ham.style.setProperty('--x',`50%`);
+		ham.style.setProperty('--y',`50%`);
+		ham.style.setProperty('--bg',`white`);
+		$('.cursor-follower').css('display','block');
+		$('.cursor').css('display','block');
+	}	
 }
 const hamBoxMM = (e) => {
-    const ham = document.getElementsByClassName('hamBox')[0]; 
-	ham.style.setProperty('--x',`${e.pageX - window.innerWidth + 80}px`);
-	ham.style.setProperty('--y',`${e.pageY - window.pageYOffset}px`);	
+	if (!isMobile) {
+		const ham = document.getElementsByClassName('hamBox')[0]; 
+		ham.style.setProperty('--x',`${e.pageX - window.innerWidth + 80}px`);
+		ham.style.setProperty('--y',`${e.pageY - window.pageYOffset}px`);
+	}
 }
 const hamBoxClick = (e) => {
 	if(document.getElementById('Navbar').classList.contains('opened')){

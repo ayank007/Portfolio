@@ -21,7 +21,7 @@ const P1 = ({props,doo}) => {
                 </div>
             </div>
         </DelayLink>
-        <h6>Student Portfolio</h6>
+        <h5>Student Portfolio</h5>
         <p>( html, css, bootstrap, js, jquery )</p>
         </div>
     );
