@@ -19,6 +19,12 @@ const ProjectDetails6 = ({props, doo}) => {
                 window.location.href=`/Portfolio/#/#Projects`;
             },1200);
         });
+        $('.contactLink').click(function(){
+            doo();
+            setTimeout(function(){
+                window.location.href=`/Portfolio/#/#Contact`;
+            },1200);
+        });
         $('.goAboutLink').click(function(){
             doo();
             if(!$('#AboutSandE').hasClass('active')){

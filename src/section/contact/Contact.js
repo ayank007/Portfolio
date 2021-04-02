@@ -122,7 +122,7 @@ const Contact = () => {
                 <div>
                     <input type="text" id='contactName' minLength="1" className='form-control'
                         name='Name' required autoComplete='off' />
-                    <div className='placeholder'>Your Name / Email / Contact Details</div>
+                    <div className='placeholder'>Your Name / Contact Details</div>
                 </div>
                 <input name='Reasons' className='hiddenInput reasonInput' />
                 <input name='Date' className='hiddenInput dateInput' />

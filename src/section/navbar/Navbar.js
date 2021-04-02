@@ -71,7 +71,7 @@ const Navbar = ({props,doo}) => {
 							<li><Link smooth to="#AboutDetails" className="link AboutDetailsLink">About Me</Link></li>
 							<li><Link smooth to="#About" className="link goAboutLink">Skills & Experience</Link></li>
 							<li><Link smooth to="#ACademicDetails" className="link ACademicDetailsLink">Academic Details</Link></li>
-							<li><Link smooth to="/#Contact" className="link contactLink">Contact Details</Link>
+							<li><Link smooth to="#Contact" className="link contactLink">Contact Details</Link>
 							</li>
 						</ul>
 					</div>

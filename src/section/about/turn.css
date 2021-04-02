@@ -32,6 +32,26 @@
     background-color: var(--primary-dark);
     /* background-color: aqua; */
 }
+.sidePage span{
+    display: none;
+}
+.sidePage.active{
+    background-color: white!important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black!important;
+    border-radius: 5px;  
+}
+.sidePage.active span{
+    display: block;
+    position: absolute;
+    font-weight: bold;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    margin: 15px;
+}
 .innerpage > div{
     width: 90%;
     height: 80%;

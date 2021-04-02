@@ -18,6 +18,7 @@ import ayan from '../../img/ayan.jpg';
 import Modal from '../../components/cv/Resume';
 import resume from '../../img/Resume.pdf';
 import HTMLFlipBook from "react-pageflip";
+import {isMobile} from 'react-device-detect';
 
 const About = () => {
     const [isOpen, toggle] = useState(false);
@@ -36,10 +37,10 @@ const About = () => {
         'C', 'Python', 'React', 'JQuery',
         'Node', 'Flask', 'Figma',
         'MS Excel', 'SQL', 'Powerpoint',
-        'PhP', 'Burpsuite', 'Dev C++',
+        'Dev C++','React Native',
         'Ngrok', 'Anaconda', 'MS Word',
         'Eclipse', 'Gambus', 'WireShark',
-        'Visual Basic', 'Metasploit', 'Miniconda',
+        'Visual Basic', 'Miniconda',
         'Framer Motion', 'Bootstrap', 'SVG',
         'Git', 'Github', 'Postman',
         'Tachyons', 'JSON', 'Accuantix',
@@ -70,6 +71,12 @@ const About = () => {
     const panel1YSpring = useSpring(panel1Y, springConfig);
     const panel2YSpring = useSpring(panel2Y, springConfig);
     const panel3YSpring = useSpring(panel3Y, springConfig);
+
+    useEffect(()=>{
+        if (isMobile) {
+            $('.sidePage').addClass('active')
+        }
+    },[])
 
     useEffect(()=>{
         var acc = document.getElementsByClassName("accordionBtn");
@@ -159,7 +166,19 @@ const About = () => {
                             <div className='tagcloudCon'></div>
     		            </div>
                         <div className='SandEtxt'>
-                            I'm a final year Engineering student and throughout my degree I have developed many big projects along with small assignments under my own or as a group member. While making these projects I have continuously developed myself side by side and develop everyday. I have used different technologies, mainly JavaScript, TypeScript (React), Node, C, Python, Figma, SQL etc. for different projects but I have maintained one common thing i.e. cleanness. My codes are well structured with proper comments so that my teammates can easily follow along with it. Speaking of my team members, they love to work with me because of my friendly behaviour and ethics. I may not be the official leader every time but I always stepped up to track the process, providing a helping hand and sometimes to cheer them, so we can finish it within the deadline. Not having any corporate experience never put me down to do that. Finally I try to think as the targeted audience and code accordingly by fully understanding the flow and logic.
+                            I'm a final year Engineering student and throughout my degree I have developed 
+                            many big projects along with small assignments under my own or as a group member. 
+                            While making these projects I have continuously developed myself side by side. 
+                            I have used different technologies, mainly JavaScript, React, Node, C, Python, 
+                            Figma, SQL etc. for different projects but I have maintained one common thing 
+                            i.e. cleanness. My codes are well structured with proper comments so that my 
+                            teammates can easily follow along with it and it can be reused for future. 
+                            Speaking of my team members, they love to work with me because of my friendly 
+                            behaviour and ethics. I may not be the official leader every time but I always 
+                            stepped up to track the process, providing a helping hand and sometimes to 
+                            cheer them, so we can finish it within the deadline. Not having any corporate 
+                            experience never put me down to do that. Finally, I try to code by fully 
+                            understanding the flow and thinking as the targeted audience.
                             <br/>
                             <div className='aboutBtnBg'>
                                 <div onClick={() => handlOpenModal1(true)} className='aboutCVBtn'>Video CV</div>
@@ -245,7 +264,9 @@ const About = () => {
                 </div>
                 <motion.div className='accordionBody flipbookABody' style={{translateY: panel3YSpring}}>
                     <HTMLFlipBook width={350} height={400} className="magazine">
-                        <div className="sidePage"></div>
+                        <div className="sidePage">
+                            <span>It's a scratch pad, click to top right / bottom right</span>
+                        </div>
                         <div>
                             <div key={0} className='page'
                                 style={{background: `url(${DCover})`,

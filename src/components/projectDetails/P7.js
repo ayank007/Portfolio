@@ -13,6 +13,12 @@ const ProjectDetails7 = ({props, doo}) => {
                 window.location.href=`/Portfolio/#/#Root`;
             },1200);
         });
+        $('.contactLink').click(function(){
+            doo();
+            setTimeout(function(){
+                window.location.href=`/Portfolio/#/#Contact`;
+            },1200);
+        });
         $('.workLink').click(function(){
             doo();
             setTimeout(function(){

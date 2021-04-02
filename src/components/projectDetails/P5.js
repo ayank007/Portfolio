@@ -37,6 +37,12 @@ const ProjectDetails5 = ({props, doo}) => {
                 window.location.href=`/Portfolio/#/#AboutDetails`;
             },1200);
         });
+        $('.contactLink').click(function(){
+            doo();
+            setTimeout(function(){
+                window.location.href=`/Portfolio/#/#Contact`;
+            },1200);
+        });
         $('.ACademicDetailsLink').click(function(){
             doo();
             if(!$('#AboutDetails').hasClass('active')){

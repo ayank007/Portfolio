@@ -86,7 +86,7 @@ const Sidebar = () => {
 				</div>
 				<div className="sideContact">
 					<div>
-						<Link smooth to="#Contact" className="link contactLink">Contact Me</Link>
+						<Link smooth to="#Contact" className="link">Contact Me</Link>
 					</div>
 				</div>
 				<Link className="goToTop" smooth to="#Root">
