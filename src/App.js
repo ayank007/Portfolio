@@ -16,10 +16,6 @@ import ProjectDetails6 from './components/projectDetails/P6';
 import ProjectDetails7 from './components/projectDetails/P7';
 
 const App = () => {
-    const [route, setRoute] = useState('Home');
-    const onRouteChange = (route) => {
-        setRoute(route)
-    }
     const doo=()=>{
         console.log('heloooooooooooooooooooooooooooooo')
         $('.hello').addClass('cursor-none');

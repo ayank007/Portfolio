@@ -42,10 +42,11 @@ const Header = () => {
                 <h5>Hello, my name is Ayan</h5>
                 <div className='whatIDo'><div id='whatIDo'></div> &nbsp;</div>
                 <p className='shortIntro'>
-                    I am a fresher and currently pursuing my 
+                    I am a frontend developer and a freelancer with a keen interest in coding 
+                    and a passion for web designing, currently pursuing  
                     B-Tech degree from University of Engineering & Management, Kolkata. I 
-                    shall graduate in june, 2021. I've been trained in various technologies and 
-                    worked in many group projects. Looking forward to a full time job.
+                    shall graduate in may 7th, 2021. 
+                    Looking forward to join an interesting and forward thinking company in full-time role.
                 </p>
                 <div className='btns'>
                     <div className='link'>
